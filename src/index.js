@@ -1,7 +1,12 @@
 import "./styles.scss";
 import Parallax from "parallax-js";
-import { generateStars } from "./stars";
+import { generateStars } from "./stars/stars";
+import { generateCometaFromStar } from "./cometa/cometa";
 
 var scene = document.getElementById("scene");
-var parallaxInstance = new Parallax(scene);
-generateStars();
+new Parallax(scene);
+var starsPosition = generateStars();
+
+for (let count = 0; count < 4; count++) {
+  generateCometaFromStar(starsPosition);
+}
