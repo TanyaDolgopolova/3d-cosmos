@@ -13,16 +13,16 @@ export const generateStars = function() {
     let ypositionStar3 = Math.random();
 
     var positionForStar1 = {
-      x: 2000 * xpositionStar1,
-      y: 700 * ypositionStar1
+      x: window.innerWidth * xpositionStar1,
+      y: window.innerHeight * ypositionStar1
     };
     var positionForStar2 = {
-      x: 2000 * xpositionStar2,
-      y: 700 * ypositionStar2
+      x: window.innerWidth * xpositionStar2,
+      y: window.innerHeight * ypositionStar2
     };
     var positionForStar3 = {
-      x: 2000 * xpositionStar3,
-      y: 700 * ypositionStar3
+      x: window.innerWidth * xpositionStar3,
+      y: window.innerHeight * ypositionStar3
     };
 
     let starType1 = document.createElement("div");
